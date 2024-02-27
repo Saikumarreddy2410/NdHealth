@@ -13,9 +13,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon App.cjs",
-    "build": "babel src -d dist"
-  },
+    "start": "nodemon App.cjs"  },
   "author": "",
   "license": "ISC",
   "description": "",
