@@ -2,10 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "C:/Users/hp/Desktop/NewDirectionOverseas/ndoverseas-health/NdHealth/server/App.cjs",
+      "src": "./App.cjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
-
