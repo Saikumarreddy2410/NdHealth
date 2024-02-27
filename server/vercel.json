@@ -1,4 +1,10 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "App.cjs",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
