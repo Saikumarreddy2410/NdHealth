@@ -13,7 +13,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon App.cjs"
+    "start": "nodemon App.cjs",
+    "build": "npm i"
   },
   "author": "",
   "license": "ISC",
