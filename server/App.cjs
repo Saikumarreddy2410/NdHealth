@@ -23,14 +23,14 @@ app.post("/submit-form", async (req, res) => {
       service: "gmail",
       auth: {
         user: "saikumargeeri@gmail.com", // Your Gmail email
-        pass: "inqpsloqqpjcoldj", // Your Gmail password
+        pass: "qewvfwfytmdjidyb", // Your Gmail password
       },
     });
 
     const mailOptions = {
-      from: "saikumargeeri@gmail.com",
-      to: "newdirectionsmedia.ai@gmail.com",
-      subject: "Enquiry from Health-care Contact",
+      from: email,
+      to: "saikumarreddy2410@gmail.com",
+      subject: `Enquiry from Health-care Contact User is ${username}`,
       html: `
       <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#dedede">
       <tr>

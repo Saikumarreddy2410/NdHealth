@@ -11,11 +11,11 @@ const Select = (props) => {
         className="focus:outline-none p-2 border border-lightGray rounded-md w-44"
         name={name}
       >
-        {options.map((option) => {
+        {options.map((option,index) => {
           const { label, value } = option;
           console.log(option);
           return (
-            <option key={value} value={value}>
+            <option key={index} value={value}>
               {label}
             </option>
           );

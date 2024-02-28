@@ -36,30 +36,6 @@ const ContactUs = () => {
 
   const onSubmit = async (values, { resetForm }) => {
     validate(values);
-    // try {
-    //   const response = await fetch("http://localhost:3001/submit-form", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(values),
-    //   });
-
-    //   const result = await response.json();
-
-    //   console.log("result", result);
-
-    //   if (result.success) {
-    //     // Form submitted successfully, you can handle the success case here
-    //     console.log("Form submitted successfully");
-    //   } else {
-    //     // Handle the case where the form submission failed
-    //     console.error("Failed to submit form");
-    //   }
-    // } catch (error) {
-    //   console.error("Error submitting form:", error);
-    // }
-
     try {
       const response = await fetch("http://localhost:3001/submit-form", {
         method: "POST",
@@ -227,7 +203,7 @@ const ContactUs = () => {
                   type="text"
                   id="username"
                   name="username"
-                  className="focus:outline-none xs:w-96 xxs:w-72 border border-lightGray p-2 rounded"
+                  className="focus:outline-none xs:w-96 xxs:w-72 border border-lightGray p-2 rounded capitalize"
                   onChange={formik.handleChange}
                   value={formik.values.username}
                   placeholder="Full Name*"

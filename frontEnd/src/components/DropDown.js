@@ -22,7 +22,7 @@ const DropDown = () => {
       {dropDownLists.map((list,index) => {
         const { item, href } = list;
         return (
-          <Link to={href} key={index}>
+          <Link to={href} key={list}>
             <li>{item}</li>
           </Link>
         );
